@@ -26,7 +26,7 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local MainTab = Window:CreateTab("рџЏ  Home", nil)
+local MainTab = Window:CreateTab("Home", nil)
 local MainSection = MainTab:CreateSection("Main")
 
 Rayfield:Notify({
