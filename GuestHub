@@ -286,3 +286,22 @@ Name = "Piggy Script Revamp 1/2 books [Credits to the Owner]",
    Callback = function()
       loadstring(game:HttpGet("https://rawscripts.net/raw/Piggy-MRS.-P-QUEST-O-Scrit-ReUload-28199"))()
    end
+})
+local Button7 = TPTab:CreateButton({
+Name = "Line Script Slap Battles",
+   Callback = function()
+      loadstring(game:HttpGet(("https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Battles")))()
+   end
+})
+local BTab = Window:CreateTab("Basic Scripts", nil)
+local Button7 = BTab:CreateButton({
+Name = "Infinite Yield [All Games] {Admin}",
+   Callback = function()
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Infinite-Yield_500"))()
+   end
+})
+local Button8 = BTab:CreateButton({
+Name = "Explorer/dex [All Games] {Good for Decompining}",
+   Callback = function()
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Dex-Explorer-27926"))()
+   end
