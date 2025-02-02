@@ -7,11 +7,11 @@ local Window = Rayfield:CreateWindow({
    ConfigurationSaving = {
       Enabled = false,
       FolderName = nil,
-      FileName = "Guest Hub"
+      FileName = "GuestHub"
    },
    Discord = {
-      Enabled = false,
-      Invite = "noinvitelink",
+      Enabled = true,
+      Invite = "https://discord.gg/dvybyR9E",
       RememberJoins = true
    },
    KeySystem = true,
@@ -20,7 +20,7 @@ local Window = Rayfield:CreateWindow({
       Subtitle = "Key System",
       Note = "Get key in discord",
       FileName = "Key",
-      SaveKey = false,
+      SaveKey = true,
       GrabKeyFromSite = true,
       Key = {"Begemotik12345"}
    }
@@ -31,12 +31,12 @@ local MainSection = MainTab:CreateSection("Main")
 
 Rayfield:Notify({
    Title = "You executed the script",
-   Content = "Welcome Buddy!",
+   Content = "Welcome to GuestHub!",
    Duration = 5,
    Image = 13047715178,
    Actions = {
       Ignore = {
-         Name = "Okay!",
+         Name = "Success!",
          Callback = function()
             print("The user tapped Okay!")
          end
@@ -45,7 +45,7 @@ Rayfield:Notify({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Infinite Jump Toggle",
+   Name = "Infinite Jump",
    Callback = function()
       _G.infinjump = not _G.infinjump
 
@@ -70,7 +70,7 @@ local Button = MainTab:CreateButton({
 })
 
 local WalkSpeedSlider = MainTab:CreateSlider({
-   Name = "WalkSpeed Slider",
+   Name = "WalkSpeed Modifier",
    Range = {1, 350},
    Increment = 1,
    Suffix = "Speed",
@@ -82,7 +82,7 @@ local WalkSpeedSlider = MainTab:CreateSlider({
 })
 
 local JumpPowerSlider = MainTab:CreateSlider({
-   Name = "JumpPower Slider",
+   Name = "JumpPower Modifier",
    Range = {1, 350},
    Increment = 1,
    Suffix = "Power",
@@ -94,7 +94,7 @@ local JumpPowerSlider = MainTab:CreateSlider({
 })
 
 local Input = MainTab:CreateInput({
-   Name = "Walkspeed",
+   Name = "Set Walkspeed",
    PlaceholderText = "1-500",
    RemoveTextAfterFocusLost = true,
    Callback = function(Text)
