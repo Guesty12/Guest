@@ -294,12 +294,14 @@ Name = "Line Script Slap Battles",
    end
 })
 local BTab = Window:CreateTab("Basic Scripts", nil)
+local AdminSection = BTab:CreateSection("Admin Scripts")
 local Button7 = BTab:CreateButton({
 Name = "Infinite Yield [All Games] {Admin}",
    Callback = function()
       loadstring(game:HttpGet("https://rawscripts.net/raw/Infinite-Yield_500"))()
    end
 })
+local OtherSection = BTab:CreateSection("Other Scripts")
 local Button8 = BTab:CreateButton({
 Name = "Explorer/dex [All Games] {Good for Decompining}",
    Callback = function()
