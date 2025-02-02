@@ -51,7 +51,7 @@ local Button = MainTab:CreateButton({
 
       if _G.infinJumpStarted == nil then
          _G.infinJumpStarted = true
-         game.StarterGui:SetCore("SendNotification", {Title="Nil Hub"; Text="Infinite Jump Activated!"; Duration=5;})
+         game.StarterGui:SetCore("SendNotification", {Title="GuestHub"; Text="Infinite Jump Activated!"; Duration=5;})
 
          local plr = game:GetService('Players').LocalPlayer
          local m = plr:GetMouse()
@@ -123,7 +123,7 @@ local EspButton = MainTab:CreateButton({
       _G.espEnabled = not _G.espEnabled
 
       if _G.espEnabled then
-         game.StarterGui:SetCore("SendNotification", {Title="Nil Hub"; Text="ESP Players Activated!"; Duration=5;})
+         game.StarterGui:SetCore("SendNotification", {Title="GuestHub"; Text="ESP Players Activated!"; Duration=5;})
 
          local function createESP(player)
             if player.Character then
@@ -250,4 +250,34 @@ refreshPlayerDropdown()
 Players.PlayerAdded:Connect(refreshPlayerDropdown)
 Players.PlayerRemoving:Connect(refreshPlayerDropdown)
 
-local TPTab = Window:CreateTab("рџЋІ Misc", nil)
+local TPTab = Window:CreateTab("Scripts", nil)
+local Button = TPTab:CreateButton({
+Name = "Brookhaven Script Troll",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))() 
+   end
+})
+local Button2 = TPTab:CreateButton({
+Name = "VoxulHub Slap Battles [Slap Royale Only]",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Voxul/VoxulHub/main/loader.lua"))()
+   end
+})
+local Button3 = TPTab:CreateButton({
+Name = "Giangplay Slap Battles [All modes]",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Giangplay/Slap_Battles/main/Slap_Battles.lua"))()
+   end
+})
+local Button4 = TPTab:CreateButton({
+Name = "FE Fighter [All Games] {R6}",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastefy.app/wxVAgZpT/raw"))()
+   end
+}) 
+local Button5 = TPTab:CreateButton({
+Name = "Fisch Speed-Hub-X [Best One]",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+   end
+}) 
