@@ -332,12 +332,6 @@ Name = "Explorer/dex [All Games] {Good for Decompining}",
    end
 })
 local OtherTab = Window:CreateTab("Other", nil)
-local ButtonDes = OtherTab:CreateButton({
-   Name = "Destroy Script",
-   Callback = function()
-   Rayfield:Destroy()
-   end
-})
 local ButtonSigmoboy = OtherTab:CreateButton({
    Name = "Rejoin",
    Callback = function()
