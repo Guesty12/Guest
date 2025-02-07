@@ -251,14 +251,14 @@ Players.PlayerAdded:Connect(refreshPlayerDropdown)
 Players.PlayerRemoving:Connect(refreshPlayerDropdown)
 
 local TPTab = Window:CreateTab("Scripts", nil)
-local AdminSection = TPTab:CreateSection("Brookhaven")
-local Button = TPTab:CreateButton({
+local BrookhavenSection = TPTab:CreateSection("Brookhaven")
+local Button1 = TPTab:CreateButton({
 Name = "Brookhaven Script Troll",
    Callback = function()
       loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))() 
    end
 })
-local AdminSection = TPTab:CreateSection("Slap Battles")
+local SlapSection = TPTab:CreateSection("Slap Battles")
 local Button2 = TPTab:CreateButton({
 Name = "VoxulHub Slap Battles [Slap Royale Only]",
    Callback = function()
@@ -277,38 +277,70 @@ Name = "Line Script Slap Battles",
       loadstring(game:HttpGet(("https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Battles")))()
    end
 })
-local AdminSection = TPTab:CreateSection("Fisch")
+local FischSection = TPTab:CreateSection("Fisch")
 local Button5 = TPTab:CreateButton({
 Name = "Fisch Speed-Hub-X [Best One]",
    Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
    end
 })
-local AdminSection = TPTab:CreateSection("Piggy")
+local PiggySection = TPTab:CreateSection("Piggy")
 local Button6 = TPTab:CreateButton({
 Name = "Piggy Script Revamp 1/2 books [Credits to the Owner]",
    Callback = function()
       loadstring(game:HttpGet("https://rawscripts.net/raw/Piggy-MRS.-P-QUEST-O-Scrit-ReUload-28199"))()
    end
 })
-local AdminSection = TPTab:CreateSection("FE")
+local FESection = TPTab:CreateSection("FE")
 local Button7 = TPTab:CreateButton({
 Name = "FE Fighter [All Games] {R6}",
    Callback = function()
       loadstring(game:HttpGet("https://pastefy.app/wxVAgZpT/raw"))()
    end
-)} 
+})
+local Button8 = TPTab:CreateButton({
+Name = "FE KJ [All Games] {R6}",
+   Callback = function()
+      loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-KJ-universal-EARLY-ACCESS-26568"))()
+   end
+})
+local Button9 = TPTab:CreateButton({
+Name = "FE Seraphic Blade [All Games] {R6}",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastefy.app/59mJGQGe/raw"))()
+   end
+}) 
 local BTab = Window:CreateTab("Basic Scripts", nil)
 local AdminSection = BTab:CreateSection("Admin Scripts")
-local Button7 = BTab:CreateButton({
+local Button10 = BTab:CreateButton({
 Name = "Infinite Yield [All Games] {Admin}",
    Callback = function()
       loadstring(game:HttpGet("https://rawscripts.net/raw/Infinite-Yield_500"))()
    end
 })
+local Button11 = BTab:CreateButton({
+Name = "Nameless Admin [All Games] {Admin}",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
+   end
+})
 local OtherSection = BTab:CreateSection("Other Scripts")
-local Button8 = BTab:CreateButton({
+local Button12 = BTab:CreateButton({
 Name = "Explorer/dex [All Games] {Good for Decompining}",
    Callback = function()
       loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Dex-Explorer-27926"))()
    end
+})
+local OtherTab = Window:CreateTab("Other", nil)
+local ButtonDes = OtherTab:CreateButton({
+   Name = "Destroy Script",
+   Callback = function()
+   Rayfield:Destroy()
+   end
+})
+local ButtonSigmoboy = OtherTab:CreateButton({
+   Name = "Rejoin",
+   Callback = function()
+   game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+   end
+})
