@@ -2,27 +2,27 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "Guest | Hub",
-   LoadingTitle = "Loading Guest | Hub",
-   LoadingSubtitle = "by Guesty12",
+   LoadingTitle = "Guest | Hub",
+   LoadingSubtitle = "by Guest",
    ConfigurationSaving = {
       Enabled = false,
       FolderName = nil,
-      FileName = "GuestHub"
+      FileName = "Guest Hub"
    },
    Discord = {
       Enabled = true,
-      Invite = "https://discord.gg/dvybyR9E",
+      Invite = "noinvitelink",
       RememberJoins = true
    },
    KeySystem = true,
    KeySettings = {
-      Title = "Key | Guest Hub",
+      Title = "Key | Guset Hub",
       Subtitle = "Key System",
-      Note = "Get key in discord",
-      FileName = "Key",
-      SaveKey = true,
+      Note = "Key In Discord",
+      FileName = "TestKey",
+      SaveKey = false,
       GrabKeyFromSite = true,
-      Key = {"Begemotik12345"}
+      Key = {"GuestyKey1"}
    }
 })
 
@@ -31,12 +31,12 @@ local MainSection = MainTab:CreateSection("Main")
 
 Rayfield:Notify({
    Title = "You executed the script",
-   Content = "Welcome to GuestHub!",
+   Content = "Welcome Buddy!",
    Duration = 5,
    Image = 13047715178,
    Actions = {
       Ignore = {
-         Name = "Success!",
+         Name = "Okay!",
          Callback = function()
             print("The user tapped Okay!")
          end
@@ -45,13 +45,13 @@ Rayfield:Notify({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Infinite Jump",
+   Name = "Infinite Jump Toggle",
    Callback = function()
       _G.infinjump = not _G.infinjump
 
       if _G.infinJumpStarted == nil then
          _G.infinJumpStarted = true
-         game.StarterGui:SetCore("SendNotification", {Title="GuestHub"; Text="Infinite Jump Activated!"; Duration=5;})
+         game.StarterGui:SetCore("SendNotification", {Title="Nil Hub"; Text="Infinite Jump Activated!"; Duration=5;})
 
          local plr = game:GetService('Players').LocalPlayer
          local m = plr:GetMouse()
@@ -70,7 +70,7 @@ local Button = MainTab:CreateButton({
 })
 
 local WalkSpeedSlider = MainTab:CreateSlider({
-   Name = "WalkSpeed Modifier",
+   Name = "WalkSpeed Slider",
    Range = {1, 350},
    Increment = 1,
    Suffix = "Speed",
@@ -82,7 +82,7 @@ local WalkSpeedSlider = MainTab:CreateSlider({
 })
 
 local JumpPowerSlider = MainTab:CreateSlider({
-   Name = "JumpPower Modifier",
+   Name = "JumpPower Slider",
    Range = {1, 350},
    Increment = 1,
    Suffix = "Power",
@@ -94,7 +94,7 @@ local JumpPowerSlider = MainTab:CreateSlider({
 })
 
 local Input = MainTab:CreateInput({
-   Name = "Set Walkspeed",
+   Name = "Walkspeed",
    PlaceholderText = "1-500",
    RemoveTextAfterFocusLost = true,
    Callback = function(Text)
@@ -123,7 +123,7 @@ local EspButton = MainTab:CreateButton({
       _G.espEnabled = not _G.espEnabled
 
       if _G.espEnabled then
-         game.StarterGui:SetCore("SendNotification", {Title="GuestHub"; Text="ESP Players Activated!"; Duration=5;})
+         game.StarterGui:SetCore("SendNotification", {Title="Nil Hub"; Text="ESP Players Activated!"; Duration=5;})
 
          local function createESP(player)
             if player.Character then
