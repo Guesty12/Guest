@@ -1,22 +1,22 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Guest | Hub",
-   LoadingTitle = "Guest | Hub",
+   Name = "Guest | ScriptHub",
+   LoadingTitle = "Guest | ScriptHub",
    LoadingSubtitle = "by Guest",
    ConfigurationSaving = {
       Enabled = false,
       FolderName = nil,
-      FileName = "Guest Hub"
+      FileName = "Guest | ScriptHub"
    },
    Discord = {
-      Enabled = true,
+      Enabled = false,
       Invite = "noinvitelink",
       RememberJoins = true
    },
-   KeySystem = true,
+   KeySystem = false,
    KeySettings = {
-      Title = "Key | Guset Hub",
+      Title = "Key | Guest | ScriptHub",
       Subtitle = "Key System",
       Note = "Key In Discord",
       FileName = "TestKey",
