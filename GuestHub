@@ -2,6 +2,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "Guest | ScriptHub",
+   Icon = 4483362458,
    LoadingTitle = "Guest | ScriptHub",
    LoadingSubtitle = "by Guest",
    ConfigurationSaving = {
@@ -344,6 +345,69 @@ Name = "Explorer/dex [All Games] {Good for Decompining}",
    Callback = function()
       loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Dex-Explorer-27926"))()
    end
+})
+local themesTab = Window:CreateTab("Themes", nil) 
+local Button = themesTab:CreateButton({
+   Name = "Default",
+   Callback = function()
+   Window.ModifyTheme('Default')
+   end,
+})
+
+local Button = themesTab:CreateButton({
+   Name = "AmberGlow",
+   Callback = function()
+   Window.ModifyTheme('AmberGlow')
+   end,
+})
+
+local Button = themesTab:CreateButton({
+   Name = "Amethyst",
+   Callback = function()
+   Window.ModifyTheme('Amethyst')
+   end,
+})
+
+local Button = themesTab:CreateButton({
+   Name = "Bloom",
+   Callback = function()
+   Window.ModifyTheme('Bloom')
+   end,
+})
+
+local Button = themesTab:CreateButton({
+   Name = "DarkBlue",
+   Callback = function()
+   Window.ModifyTheme('DarkBlue')
+   end,
+})
+
+local Button = themesTab:CreateButton({
+   Name = "Green",
+   Callback = function()
+   Window.ModifyTheme('Green')
+   end,
+})
+
+local Button = themesTab:CreateButton({
+   Name = "Light",
+   Callback = function()
+   Window.ModifyTheme('Light')
+   end,
+})
+
+local Button = themesTab:CreateButton({
+   Name = "Ocean",
+   Callback = function()
+   Window.ModifyTheme('Ocean')
+   end,
+})
+
+local Button = themesTab:CreateButton({
+   Name = "Serenity",
+   Callback = function()
+   Window.ModifyTheme('Serenity')
+   end,
 })
 local OtherTab = Window:CreateTab("Other", nil)
 local ButtonSigmoboy = OtherTab:CreateButton({
