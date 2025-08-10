@@ -51,7 +51,7 @@ local Button = MainTab:CreateButton({
 
       if _G.infinJumpStarted == nil then
          _G.infinJumpStarted = true
-         game.StarterGui:SetCore("SendNotification", {Title="Nil Hub"; Text="Infinite Jump Activated!"; Duration=5;})
+         game.StarterGui:SetCore("SendNotification", {Title="Guest | ScriptHub"; Text="Infinite Jump Activated!"; Duration=5;})
 
          local plr = game:GetService('Players').LocalPlayer
          local m = plr:GetMouse()
@@ -123,7 +123,7 @@ local EspButton = MainTab:CreateButton({
       _G.espEnabled = not _G.espEnabled
 
       if _G.espEnabled then
-         game.StarterGui:SetCore("SendNotification", {Title="Nil Hub"; Text="ESP Players Activated!"; Duration=5;})
+         game.StarterGui:SetCore("SendNotification", {Title="Guest | ScriptHub"; Text="ESP Players Activated!"; Duration=5;})
 
          local function createESP(player)
             if player.Character then
@@ -277,6 +277,20 @@ Name = "Line Script Slap Battles",
       loadstring(game:HttpGet(("https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Slap%20Battles")))()
    end
 })
+local NightsSection = TPTab:CreateSection("99 Nights In The Forest") 
+local ButtonNights = TPTab:CreateButton({
+Name = "Hutao Hub [Best One Keyless]",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/SLK-gaming/Hutao-Hub/refs/heads/main/99-Nights-In-The-Forest.txt"))() 
+   end
+}) 
+local StealSection = TPTab:CreateSection("Steal A Brainrot") 
+local ButtonSteal = TPTab:CreateButton({
+Name = "Chili Hub [Best One Keyless]",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/spicy/main/Chilli.lua"))()
+   end
+})  
 local FischSection = TPTab:CreateSection("Fisch")
 local Button5 = TPTab:CreateButton({
 Name = "Fisch Speed-Hub-X [Best One]",
