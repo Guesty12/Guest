@@ -338,3 +338,9 @@ local ButtonSigmoboy = OtherTab:CreateButton({
    game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
    end
 })
+local ButtonGoida = OtherTab:CreateButton({
+   Name = "Close script",
+   Callback = function()
+   Rayfield:Destroy() 
+   end
+})
