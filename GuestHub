@@ -31,8 +31,8 @@ local MainTab = Window:CreateTab("Home", nil)
 local MainSection = MainTab:CreateSection("Main")
 
 Rayfield:Notify({
-   Title = "You executed the script",
-   Content = "Welcome Buddy!",
+   Title = "Script Loaded",
+   Content = "Success!",
    Duration = 5,
    Image = 13047715178,
    Actions = {
@@ -44,6 +44,8 @@ Rayfield:Notify({
       },
    },
 })
+
+Window.ModifyTheme('Amethyst')
 
 local Button = MainTab:CreateButton({
    Name = "Infinite Jump Toggle",
